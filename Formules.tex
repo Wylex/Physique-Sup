@@ -1,0 +1,109 @@
+%Préamble {{{1
+\documentclass[fleqn]{article}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{verbatim}
+\usepackage{booktabs}
+\usepackage{mathrsfs}
+
+\theoremstyle{definition} \newtheorem*{defi}{D\'efinition}
+\theoremstyle{definition} \newtheorem*{theo}{Th\'eor\`eme}
+\theoremstyle{definition} \newtheorem*{coro}{Corollaire}
+\theoremstyle{remark} \newtheorem*{rqs}{Remarques}
+\theoremstyle{definition} \newtheorem*{prop}{Propri\'et\'e}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+\ra{1.3}
+
+\title{Formules}
+\date{}
+
+\begin{document}
+\maketitle
+
+%Formules {{{1
+
+\newcounter{ct}
+\stepcounter{ct}
+
+\section{Signaux}
+\subsection{Oscillateur harmonique $^\thect$}
+\begin{enumerate}
+	\item $\vec{F}_{elas} = -k(l - l_0)\vec{u}_{ext}$
+	\item $\frac{d^2u}{dt^2} + \omega_0^2 u = 0$ \\
+		$u(t) = X_m \cos(\omega_0 t + \varphi)$\\
+		$u(t) = A\cos(\omega_0 t) + B\sin(\omega_0 t)$
+	\item  $E_{pe} = \frac{1}{2}k(l - l_0)^2\ (+cte)$
+\end{enumerate}
+\stepcounter{ct}
+
+\subsection{Propagation signal $^\thect$}
+\begin{enumerate}
+	\item $s(x,t) = f(x - ct)$ (resp. $f(x + ct)$) si onde se propage $x$ croissants (resp. d\'ecroissants)
+\end{enumerate}
+\stepcounter{ct}
+
+\subsection{Onde progressive sinuso\"idale $^\thect$}
+\begin{enumerate}
+	\item $s(x,t) = A\cos(\omega t - kx + \varphi)$
+	\item $k =  \frac{\omega}{c}$
+	\item $\varphi_2 - \varphi_1 = -\frac{2\pi}{T} (t_2 - t_1)$
+\end{enumerate}
+\stepcounter{ct}
+
+\subsection{Superposition d'ondes progressives sinuso\"idales $^\thect$}
+\begin{enumerate}
+	\item $s(M,t) = A_1\cos(\omega t + \varphi_1 (M)) + A_2\cos(\omega t + \varphi_2 (M)) = A_r\cos(\omega t + \varphi_r (M))$
+	\item $s(x,t) = C\cos(kx + \psi)\cos(\omega t + \varphi)$
+	\item $L = n \frac{\lambda}{2}$
+\end{enumerate}
+\stepcounter{ct}
+
+\section{Ondes lumineuses}
+\subsection{Mod\`ele g\'eom\'etrique de la lumi\`ere $^\thect$}
+\begin{enumerate}
+	\item $n = \frac{c}{v}$
+	\item $n_1 \sin(i_1) = n_2 \sin(i_2)$
+\end{enumerate}
+\stepcounter{ct}
+
+\subsection{Formation des images $^\thect$}
+\stepcounter{ct}
+
+\subsection{Lentilles minces sph\'eriques $^\thect$}
+\begin{enumerate}
+	\item $\gamma = \frac{\overline{F'A'}}{-f'} = \frac{f'}{\overline{FA}}$
+	\item $\overline{F'A'}.\overline{FA} = \overline{F'O}.\overline{FO} = -f'^2$
+	\item $\gamma = \frac{\overline{OA'}}{\overline{OA}}$
+	\item $\frac{1}{\overline{OA'}} - \frac{1}{\overline{OA}} = \frac{1}{f'}$
+\end{enumerate}
+\stepcounter{ct}
+
+\section{\'Electricit\'e}
+\subsection{Lois g\'en\'erales de l'\'electrocin\'etique $^\thect$}
+\begin{enumerate}
+	\item $i = \frac{dq}{dt}$
+	\item $u_{AB} = V_A - V_B$
+	\item $p = u.i$ (puissance re\c{c}ue pour dipole en convention r\'ecepteur)
+\end{enumerate}
+\stepcounter{ct}
+
+\subsection{Mod\'elisation des dip\^oles usuels $^\thect$}
+\begin{enumerate}
+	\item Conducteur ohmique: convention r\'ecepteur $u = Ri$
+	\item Condensateur: convention r\'ecepteur $i = C\frac{du}{dt}$
+	\item Bobine: convention r\'ecepteur $u = L\frac{di}{dt}$
+	\item $E_{cond}(t) = \frac{1}{2} Cu^2(t)$
+	\item $E_{bob}(t) = \frac{1}{2} Li^2(t)$
+\end{enumerate}
+\stepcounter{ct}
+
+\subsection{R\'egime permanent $^{\thect}$}
+\begin{enumerate}
+	\item M\'ethode pour trouver des inconnues dans un circuit en r\'egime permanent
+\end{enumerate}
+\stepcounter{ct}
+
+
+\end{document}
