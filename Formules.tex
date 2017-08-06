@@ -80,8 +80,42 @@
 \end{enumerate}
 \stepcounter{ct}
 
+\section{Structure mati\`ere}
+\subsection{Introduction au monde quantique $^{\thect}$}
+\begin{enumerate}
+	\item $E = $
+	\item $\vec{p} = $
+	\item $\lambda_{DB} = $
+\end{enumerate}
+\stepcounter{ct}
+
+\subsection{Quantification d'\'energie dans l'atome d'hydrog\`ene $^{\thect}$}
+\begin{enumerate}
+	\item $E_n = \frac{13,6}{n}$?
+\end{enumerate}
+\stepcounter{ct}
+
+\subsection{Structure \'electronique des atomes $^{\thect}$}
+\begin{enumerate}
+	\item $s < p < f < d < \hdots $
+\end{enumerate}
+\stepcounter{ct}
+
+\subsection{Classification p\'eriodique des \'el\'ements $^{\thect}$}
+\begin{enumerate}
+	\item a
+\end{enumerate}
+\stepcounter{ct}
+
+\subsection{Structure des mol\'ecules $^{\thect}$}
+\begin{enumerate}
+	\item a
+\end{enumerate}
+\stepcounter{ct}
+
+
 \section{\'Electricit\'e}
-\subsection{Lois g\'en\'erales de l'\'electrocin\'etique $^\thect$}
+\subsection{Lois g\'en\'erales de l'\'electrocin\'etique $^{\thect}$}
 \begin{enumerate}
 	\item $i = \frac{dq}{dt}$
 	\item $u_{AB} = V_A - V_B$
@@ -89,13 +123,14 @@
 \end{enumerate}
 \stepcounter{ct}
 
-\subsection{Mod\'elisation des dip\^oles usuels $^\thect$}
+\subsection{Mod\'elisation des dip\^oles usuels $^{\thect}$}
 \begin{enumerate}
 	\item Conducteur ohmique: convention r\'ecepteur $u = Ri$
 	\item Condensateur: convention r\'ecepteur $i = C\frac{du}{dt}$
 	\item Bobine: convention r\'ecepteur $u = L\frac{di}{dt}$
 	\item $E_{cond}(t) = \frac{1}{2} Cu^2(t)$
 	\item $E_{bob}(t) = \frac{1}{2} Li^2(t)$
+	\item Charge condensateur $Q = Cu$
 \end{enumerate}
 \stepcounter{ct}
 
@@ -104,6 +139,72 @@
 	\item M\'ethode pour trouver des inconnues dans un circuit en r\'egime permanent
 \end{enumerate}
 \stepcounter{ct}
+
+\subsection{R\'egimes transitoires des circuits lin\'eaires du premier ordre $^{\thect}$}
+\begin{enumerate}
+	\item M\'ethode d'\'etude d'un r\'egime transitoire de premier ordre
+	\item $\frac{du}{dt} + \frac{u}{\tau} = \frac{E}{\tau}:$ On calcule $A$ avec les conditions initiales \\
+		$u(t) = Ae^{-t/\tau} + E$
+	\item Tension bornes condensateur, intensit\'e bornes bobine continues
+\end{enumerate}
+\stepcounter{ct}
+
+\subsection{R\'egimes transitoires des syst\`emes lin\'eaires du deuxi\`eme ordre. Oscillateurs amortis $^{\thect}$}
+\begin{enumerate}
+	\item $\frac{d^2u}{dt^2} + \frac{\omega_0}{Q} \frac{du}{dt} + \omega_0^2 u = \omega_0^2 E$\\
+		$\frac{d^2u}{dt^2} + \frac{1}{\tau} \frac{du}{dt} + \omega_0^2 u = \omega_0^2 E$\\
+		R\'esolution de l'\'equation homog\`ene
+		\begin{enumerate}
+			\item $Q < \frac{1}{2}$, $u(t) = Ae^{r_1 t} + B e^{r_2 t}$
+			\item $Q = \frac{1}{2}$, $u(t) = (At + B)e^{-\omega_0 t}$
+			\item $Q > \frac{1}{2}$: soit $\Omega = \omega_0 \sqrt{1 - \frac{1}{4Q^2}}$,
+				\\ $u(t) = e^{\frac{-\omega_0 t}{2Q}}(A\cos(\Omega t) + B\sin(\Omega t))$\\
+				$u(t) = C e^{\frac{-\omega_0 t}{2Q}} \cos(\Omega t + \varphi)$
+		\end{enumerate}
+\end{enumerate}
+\stepcounter{ct}
+
+\section{Syst\`emes physico-chimique}
+\subsection{Description et \'evolution d'un syst\`eme vers l'\'equilibre chimique $^{\thect}$}
+\begin{enumerate}
+	\item S-G: sublimation, condensation\\
+		G-L: liquefaction, Vaporisation\\
+		L-S: Solidification, Fusion
+	\item Types transformation mati\`ere: physique (ch \'etats), chimique, nucl\'eaire
+	\item Titre molaire: $x_i = \frac{n_i}{\sum n_k}$
+	\item Pression partielle (gp): $P_i V = n_i RT \quad P = \sum P_i$
+	\item $Q(t) = \frac{\prod a(produits)}{\prod a(reac)} \rightarrow K^0$. Utilit\'es:
+		\begin{enumerate}
+			\item Prevoire sens de r\'eaction
+			\item D\'eterminer sens de r\'eaction
+				\begin{enumerate}
+					\item $K^0 \ll 1$ alors $x_{eq}$ n\'egligeable devant concentration initiales
+					\item $K^0 \gg 1$ alors $x_{eq} \approx x_{max} \Rightarrow x_{max} - x_{eq} = \epsilon$ avec $\epsilon \ll x_{max}$
+				\end{enumerate}
+		\end{enumerate}
+\end{enumerate}
+\stepcounter{ct}
+
+\subsection{Cin\'etique chimique $^{\thect}$}
+\begin{enumerate}
+	\item Vitesse globale: $v(t) = \frac{1}{V} \frac{d \xi}{dt} = $ (\`a $V$ cte) $\frac{1}{\nu_i} \frac{d[A_i]}{dt}$ \\
+		Vitesse formation r\'eactant: $v(A_i) = \frac{1}{V} \frac{d n(A_i)}{dt} = $ (\`a $V$ cte) $\frac{d[A_i]}{dt} > 0$
+	\item Influence concentration: $v = k[R_1]^{\beta_1} [R_2]^{\beta_2} \hdots [R_N]^{\beta_N}$\\
+		Influence temp\'erature: $k = A \exp (-\frac{E_A}{RT})$
+	\item D\'etermination des ordres de r\'eaction: $\alpha A \rightarrow$ produits
+	\begin{enumerate}
+		\item M\'ethode int\'egrale: si on connait \'evolution de la concentration du r\'eactif
+		\item Temps de demi-r\'eaction: si on connait \'evolution du temps de demi-reac en fonction concentration initiale
+		\item M\'ethode diff\'erentielle: si on n'a pas d'id\'ee sur l'ordre de grandeur
+	\end{enumerate}
+	\item R\'eactions du type $\alpha A + \beta B \rightarrow $ produits
+	\begin{enumerate}
+		\item M\'elange stoechiom\'etrique pour d\'eterminer $p+q$
+		\item D\'eg\'en\'erescence de l'ordre pour d\'eterminer $p$ et $q$
+	\end{enumerate}
+\end{enumerate}
+\stepcounter{ct}
+
 
 
 \end{document}
