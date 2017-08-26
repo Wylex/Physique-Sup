@@ -7,6 +7,16 @@
 \usepackage{verbatim}
 \usepackage{booktabs}
 \usepackage{mathrsfs}
+\usepackage{hyperref}
+
+
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
 
 \theoremstyle{definition} \newtheorem*{defi}{D\'efinition}
 \theoremstyle{definition} \newtheorem*{theo}{Th\'eor\`eme}
@@ -16,19 +26,18 @@
 \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
 \ra{1.3}
 
-\title{Formules}
+\title{Physique-sup}
 \date{}
+\renewcommand*\contentsname{Contenu}
 
 \begin{document}
 \maketitle
+\tableofcontents
 
 %Formules {{{1
-
-\newcounter{ct}
-\stepcounter{ct}
-
+\newpage
 \section{Signaux}
-\subsection{Oscillateur harmonique $^\thect$}
+\subsection{Oscillateur harmonique $^1$}
 \begin{enumerate}
 	\item $\vec{F}_{elas} = -k(l - l_0)\vec{u}_{ext}$
 	\item $\frac{d^2u}{dt^2} + \omega_0^2 u = 0$ \\
@@ -36,136 +45,188 @@
 		$u(t) = A\cos(\omega_0 t) + B\sin(\omega_0 t)$
 	\item  $E_{pe} = \frac{1}{2}k(l - l_0)^2\ (+cte)$
 \end{enumerate}
-\stepcounter{ct}
 
-\subsection{Propagation signal $^\thect$}
+\subsection{Propagation signal $^2$}
 \begin{enumerate}
 	\item $s(x,t) = f(x - ct)$ (resp. $f(x + ct)$) si onde se propage $x$ croissants (resp. d\'ecroissants)
 \end{enumerate}
-\stepcounter{ct}
 
-\subsection{Onde progressive sinuso\"idale $^\thect$}
+\subsection{Onde progressive sinuso\"idale $^3$}
 \begin{enumerate}
 	\item $s(x,t) = A\cos(\omega t - kx + \varphi)$
 	\item $k =  \frac{\omega}{c}$
 	\item $\varphi_2 - \varphi_1 = -\frac{2\pi}{T} (t_2 - t_1)$
 \end{enumerate}
-\stepcounter{ct}
 
-\subsection{Superposition d'ondes progressives sinuso\"idales $^\thect$}
+\subsection{Superposition d'ondes progressives sinuso\"idales $^4$}
 \begin{enumerate}
 	\item $s(M,t) = A_1\cos(\omega t + \varphi_1 (M)) + A_2\cos(\omega t + \varphi_2 (M)) = A_r\cos(\omega t + \varphi_r (M))$
 	\item $s(x,t) = C\cos(kx + \psi)\cos(\omega t + \varphi)$
 	\item $L = n \frac{\lambda}{2}$
 \end{enumerate}
-\stepcounter{ct}
+
+
+\newpage
 
 \section{Ondes lumineuses}
-\subsection{Mod\`ele g\'eom\'etrique de la lumi\`ere $^\thect$}
+\subsection{Mod\`ele g\'eom\'etrique de la lumi\`ere $^5$}
 \begin{enumerate}
 	\item $n = \frac{c}{v}$
 	\item $n_1 \sin(i_1) = n_2 \sin(i_2)$
 \end{enumerate}
-\stepcounter{ct}
 
-\subsection{Formation des images $^\thect$}
-\stepcounter{ct}
+\subsection{Formation des images $^6$}
 
-\subsection{Lentilles minces sph\'eriques $^\thect$}
+\subsection{Lentilles minces sph\'eriques $^7$}
 \begin{enumerate}
-	\item $\gamma = \frac{\overline{F'A'}}{-f'} = \frac{f'}{\overline{FA}}$
-	\item $\overline{F'A'}.\overline{FA} = \overline{F'O}.\overline{FO} = -f'^2$
-	\item $\gamma = \frac{\overline{OA'}}{\overline{OA}}$
-	\item $\frac{1}{\overline{OA'}} - \frac{1}{\overline{OA}} = \frac{1}{f'}$
+	\item
+		\begin{enumerate}
+			\item $\gamma = \frac{\overline{F'A'}}{-f'} = \frac{f'}{\overline{FA}}$
+			\item $\overline{F'A'}.\overline{FA} = \overline{F'O}.\overline{FO} = -f'^2$
+		\end{enumerate}
+	\item
+		\begin{enumerate}
+			\item $\gamma = \frac{\overline{OA'}}{\overline{OA}}$
+			\item $\frac{1}{\overline{OA'}} - \frac{1}{\overline{OA}} = \frac{1}{f'}$
+		\end{enumerate}
 \end{enumerate}
-\stepcounter{ct}
+
+
+\newpage
 
 \section{Structure mati\`ere}
-\subsection{Introduction au monde quantique $^{\thect}$}
+\subsection{Introduction au monde quantique $^8$}
 \begin{enumerate}
 	\item $E = $
 	\item $\vec{p} = $
 	\item $\lambda_{DB} = $
 \end{enumerate}
-\stepcounter{ct}
 
-\subsection{Quantification d'\'energie dans l'atome d'hydrog\`ene $^{\thect}$}
+\subsection{Quantification d'\'energie dans l'atome d'hydrog\`ene $^9$}
 \begin{enumerate}
 	\item $E_n = \frac{13,6}{n}$?
 \end{enumerate}
-\stepcounter{ct}
 
-\subsection{Structure \'electronique des atomes $^{\thect}$}
+\subsection{Structure \'electronique des atomes $^{10}$}
 \begin{enumerate}
 	\item $s < p < f < d < \hdots $
 \end{enumerate}
-\stepcounter{ct}
 
-\subsection{Classification p\'eriodique des \'el\'ements $^{\thect}$}
+\subsection{Classification p\'eriodique des \'el\'ements $^{11}$}
 \begin{enumerate}
 	\item a
 \end{enumerate}
-\stepcounter{ct}
 
-\subsection{Structure des mol\'ecules $^{\thect}$}
+\subsection{Structure des mol\'ecules $^{12}$}
 \begin{enumerate}
 	\item a
 \end{enumerate}
-\stepcounter{ct}
 
 
-\section{\'Electricit\'e}
-\subsection{Lois g\'en\'erales de l'\'electrocin\'etique $^{\thect}$}
+
+\newpage
+
+\section{\'Electrocin\'etique}
+\subsection{Lois g\'en\'erales de l'\'electrocin\'etique $^{13}$}
 \begin{enumerate}
-	\item $i = \frac{dq}{dt}$
-	\item $u_{AB} = V_A - V_B$
-	\item $p = u.i$ (puissance re\c{c}ue pour dipole en convention r\'ecepteur)
+	\item Grandeurs:
+		\begin{enumerate}
+			\item $i = \frac{dq}{dt}$
+			\item $u_{AB} = V_A - V_B$
+			\item $p = u.i$ (puissance re\c{c}ue pour dipole en convention r\'ecepteur)
+		\end{enumerate}
 \end{enumerate}
-\stepcounter{ct}
 
-\subsection{Mod\'elisation des dip\^oles usuels $^{\thect}$}
+\subsection{Mod\'elisation des dip\^oles usuels $^{14}$}
 \begin{enumerate}
-	\item Conducteur ohmique: convention r\'ecepteur $u = Ri$
-	\item Condensateur: convention r\'ecepteur $i = C\frac{du}{dt}$
-	\item Bobine: convention r\'ecepteur $u = L\frac{di}{dt}$
+	\item Relations intesit\'e-tension:
+		\begin{enumerate}
+			\item Conducteur ohmique: convention r\'ecepteur $u = Ri$
+			\item Condensateur: convention r\'ecepteur $i = C\frac{du}{dt}$
+			\item Bobine: convention r\'ecepteur $u = L\frac{di}{dt}$
+			\item Charge condensateur $Q = Cu$
+		\end{enumerate}
 	\item $E_{cond}(t) = \frac{1}{2} Cu^2(t)$
 	\item $E_{bob}(t) = \frac{1}{2} Li^2(t)$
-	\item Charge condensateur $Q = Cu$
 \end{enumerate}
-\stepcounter{ct}
 
-\subsection{R\'egime permanent $^{\thect}$}
+\subsection{R\'egime permanent $^{15}$}
 \begin{enumerate}
-	\item M\'ethode pour trouver des inconnues dans un circuit en r\'egime permanent
+	\item M\'ethode pour trouver les inconnues d'un circuit en r\'egime permanent
 \end{enumerate}
-\stepcounter{ct}
 
-\subsection{R\'egimes transitoires des circuits lin\'eaires du premier ordre $^{\thect}$}
+\subsection{R\'egimes transitoires des circuits lin\'eaires du premier ordre $^{16}$}
 \begin{enumerate}
 	\item M\'ethode d'\'etude d'un r\'egime transitoire de premier ordre
 	\item $\frac{du}{dt} + \frac{u}{\tau} = \frac{E}{\tau}:$ On calcule $A$ avec les conditions initiales \\
 		$u(t) = Ae^{-t/\tau} + E$
-	\item Tension bornes condensateur, intensit\'e bornes bobine continues
+	\item Tension bornes condensateur et intensit\'e bornes bobine continues (pour trouver les conditions initiales)
 \end{enumerate}
-\stepcounter{ct}
 
-\subsection{R\'egimes transitoires des syst\`emes lin\'eaires du deuxi\`eme ordre. Oscillateurs amortis $^{\thect}$}
+\subsection{R\'egimes transitoires des syst\`emes lin\'eaires du deuxi\`eme ordre. Oscillateurs amortis $^{17}$}
 \begin{enumerate}
-	\item $\frac{d^2u}{dt^2} + \frac{\omega_0}{Q} \frac{du}{dt} + \omega_0^2 u = \omega_0^2 E$\\
-		$\frac{d^2u}{dt^2} + \frac{1}{\tau} \frac{du}{dt} + \omega_0^2 u = \omega_0^2 E$\\
-		R\'esolution de l'\'equation homog\`ene
+	\item $\frac{d^2u}{dt^2} + \frac{\omega_0}{Q} \frac{du}{dt} + \omega_0^2 u = \omega_0^2 E\quad$ ou
+		$\quad \frac{d^2u}{dt^2} + \frac{1}{\tau} \frac{du}{dt} + \omega_0^2 u = \omega_0^2 E$
+	\item R\'esolution de l'\'equation homog\`ene:
 		\begin{enumerate}
 			\item $Q < \frac{1}{2}$, $u(t) = Ae^{r_1 t} + B e^{r_2 t}$
 			\item $Q = \frac{1}{2}$, $u(t) = (At + B)e^{-\omega_0 t}$
 			\item $Q > \frac{1}{2}$: soit $\Omega = \omega_0 \sqrt{1 - \frac{1}{4Q^2}}$,
-				\\ $u(t) = e^{\frac{-\omega_0 t}{2Q}}(A\cos(\Omega t) + B\sin(\Omega t))$\\
-				$u(t) = C e^{\frac{-\omega_0 t}{2Q}} \cos(\Omega t + \varphi)$
+				\\ $u(t) = e^{\frac{-\omega_0 t}{2Q}}(A\cos(\Omega t) + B\sin(\Omega t))\quad$ ou
+				$\quad u(t) = C e^{\frac{-\omega_0 t}{2Q}} \cos(\Omega t + \varphi)$
 		\end{enumerate}
 \end{enumerate}
-\stepcounter{ct}
 
-\section{Syst\`emes physico-chimique}
-\subsection{Description et \'evolution d'un syst\`eme vers l'\'equilibre chimique $^{\thect}$}
+\subsection{R\'egime sinuso\"idal forc\'e - R\'esonance $^{20}$}
+\begin{enumerate}
+	\item $\frac{d^2u}{dt^2} + \frac{\omega_0}{Q} \frac{du}{dt} + \omega_0^2 u = \omega_0^2 e(t)$ avec $e(t) = E_m \cos (\omega t)$\\
+		$u(t) = u_1(t) + u_2(t)$ avec $u_1$ la solution homog\`ene et $u_2(t) = U_m \cos (\omega t + \varphi)$
+	\item On d\'etermine $\varphi$ et $U_m$ en passant en notation complexe
+	\item Resultats \`a connaitre (circuit RCL et masse ressort avec moteur cyclique):
+		\begin{enumerate}
+			\item R\'esonance en tension aux bornes condensateur/\'elongation:
+				\begin{enumerate}
+					\item Maximum d'amplitude si $Q > \frac{1}{\sqrt{2}}$ en $\omega = \omega_0 \sqrt{1 - \frac{1}{2Q^2}}$
+					\item D\'ephasage: $\lim_{\omega \rightarrow 0} \varphi = 0 \quad \lim_{\omega \rightarrow +\infty} \varphi = -\pi
+						\quad \varphi(\omega_0) = -\pi /2$
+				\end{enumerate}
+			\item R\'esonance en intensit\'e/vitesse:
+				\begin{enumerate}
+					\item Maximum d'amplitude toujours en $\omega = \omega_0$
+					\item D\'ephasage: $\lim_{\omega \rightarrow 0} \varphi = \pi / 2 \quad \lim_{\omega \rightarrow +\infty} \varphi = -\pi /2
+						\quad \varphi(\omega_0) = 0$
+				\end{enumerate}
+		\end{enumerate}
+\end{enumerate}
+
+\subsection{\'Etude g\'en\'erale des circuits lin\'eaires en r\'egime sinuso\"idal forc\'e $^{21}$}
+\begin{enumerate}
+	\item $\underbar{Z} = \frac{\underbar{u}}{\underbar{i}} = \frac{\underbar{Um}}{\underbar{Im}}$
+	\item Relations:
+		\begin{enumerate}
+			\item Conducteur: $\underbar{Z}_R = R$
+			\item Condensateur: $\underbar{Z}_C = \frac{1}{jC\omega}$
+			\item Bobine: $\underbar{Z}_L = jL\omega$
+		\end{enumerate}
+\end{enumerate}
+
+\subsection{Filtrage lin\'eaire $^{22}$}
+\begin{enumerate}
+	\item \begin{enumerate} \item Imp\'edance d'entr\'ee: $\underbar{Z}_e = \frac{\underbar{v}_e}{\underbar{i}_e}$
+		\item Imp\'edance de sortie: $\underbar{v}_s = \underbar{H}\underbar{v}_e  - \underbar{Z}_s \underbar{i}_s$ \end{enumerate}
+	\item La fonction de transfert est d\'efinie \`a vide ($\underbar{i}_s = 0$) par $\underbar{H} = \frac{\underbar{v}_s}{\underbar{v}_e}$
+	\item Action d'un filtre sur un signal sinuso\"idal: \\
+		$v_e(t) = V_{me} \cos(\omega t + \varphi_e) \rightarrow v_s(t) = G(\omega) V_{me} \cos (\omega t + \varphi_e + \varphi(\omega))$
+	\item Diagramme de Bode, deux graphes: gain en d\'ecibels $G_{dB} = 20 \log G(\omega)$ en fonction de $\log \omega$ et $\varphi(\omega)$ en
+		fonction de $\log \omega$
+	\item Pulsation de coupure $\omega_c$: $G(\omega_c) = \frac{G_{max}}{\sqrt{2}} \Leftrightarrow G_{dB}(\omega_c) = G_{dB,max} -3$
+\end{enumerate}
+
+
+\newpage
+
+\section{Syst\`emes physico-chimiques}
+\subsection{Description et \'evolution d'un syst\`eme vers l'\'equilibre chimique $^{18}$}
 \begin{enumerate}
 	\item S-G: sublimation, condensation\\
 		G-L: liquefaction, Vaporisation\\
@@ -183,9 +244,8 @@
 				\end{enumerate}
 		\end{enumerate}
 \end{enumerate}
-\stepcounter{ct}
 
-\subsection{Cin\'etique chimique $^{\thect}$}
+\subsection{Cin\'etique chimique $^{19}$}
 \begin{enumerate}
 	\item Vitesse globale: $v(t) = \frac{1}{V} \frac{d \xi}{dt} = $ (\`a $V$ cte) $\frac{1}{\nu_i} \frac{d[A_i]}{dt}$ \\
 		Vitesse formation r\'eactant: $v(A_i) = \frac{1}{V} \frac{d n(A_i)}{dt} = $ (\`a $V$ cte) $\frac{d[A_i]}{dt} > 0$
@@ -202,9 +262,114 @@
 		\item M\'elange stoechiom\'etrique pour d\'eterminer $p+q$
 		\item D\'eg\'en\'erescence de l'ordre pour d\'eterminer $p$ et $q$
 	\end{enumerate}
+	\item Suivis exp\'erimental
+		\begin{enumerate}
+			\item Dosage
+			\item Spectrophotom\'etrie: $A(\lambda) = \log \frac{I_0(\lambda)}{I(\lambda)} \quad A(\lambda) = \varepsilon(\lambda) l c$
+			\item Conductim\'etrie: Si une solution contient des ions $B_i^{z_i}$ alors: \\ $\gamma = \sum \lambda_{B_i^{z_i}}^0[B_i^{z_i}]$
+		\end{enumerate}
 \end{enumerate}
-\stepcounter{ct}
 
+\newpage
 
+\section{M\'ecanique}
+\subsection{Cin\'ematique du point $^{23}$}
+\begin{enumerate}
+	\item \begin{enumerate}
+		\item cart\'esiennes: $(O, \vec{u_x}, \vec{u_y}, \vec{u_z})$, $\vec{OM} = x \vec{u_x} + y \vec{u_y} + z \vec{u_z}$
+		\item polaire: $(O, \vec{u_r}, \vec{u_\theta})$, $\vec{OM} = r \vec{u_r}$
+		\item cylindrique: $(O, \vec{u_r}, \vec{u_\theta}, \vec{u_z})$, $\vec{OM} = r \vec{u_r} + z\vec{u_z}$
+		\item sph\'erique: $(O, \vec{u_r}, \vec{u_\theta}, \vec{u_\varphi})$, $\vec{OM} = r \vec{u_r}$
+	\end{enumerate}
+	\item D\'erivation vecteurs bases polaire, cyclindrique: $\frac{d\vec{u_r}}{dt} = \dot \theta \vec{u_\theta} \quad
+		\frac{d\vec{u_\theta}}{dt} = - \dot \theta \vec{u_r}$
+	\item \'El\'ements infinit\'esimaux:\\
+	\begin{tabular}{@{}lrrrrrrrrr@{}}
+		%\toprule
+		cart\'esiennes & $dx$ & $dy$ & $dz$ \\
+		cylindriques & $dr$ & $rd \theta$ & $dz$ \\
+		sph\'eriques & $dr$ & $rd \theta$ & $r \sin \theta d \varphi$ \\
+		%\bottomrule
+	\end{tabular}
+\end{enumerate}
+
+\subsection{Cin\'ematique du solide $^{24}$}
+\begin{enumerate}
+	\item \begin{enumerate}
+		\item Translastion: tout cuple de points $A$, $B$, alors $\vec{AB}$ reste constant
+		\item Rotation: touts les points ont une trajectoire circulaire
+	\end{enumerate}
+\end{enumerate}
+
+\subsection{Loi de la quantit\'e de mouvement $^{25}$}
+\begin{enumerate}
+	\item Lois de Newton
+		\begin{enumerate}
+			\item Principe d'inertie
+			\item PFD
+			\item Actions r\'eciproques
+		\end{enumerate}
+	\item Centre de masse, not\'e $G$: $\vec{OG} = \frac{m_1 \vec{OM_1} + m_2 \vec{OM_2}}{m_1 + m_2}$
+	\item
+		\begin{enumerate}
+			\item Force gravitationnelle: $\vec{F_{1 \rightarrow 2}} = -Gm_1 m_2 \frac{\vec{M_1 M_2}}{\|\vec{M_1 M_2}\|^3}$
+			\item Force \'electrostatique: $\vec{F_{1 \rightarrow 2}} = \frac{q_1 q_2}{4\pi\epsilon_0} \frac{\vec{M_1 M_2}}{\|\vec{M_1 M_2}\|^3}$
+			\item Force de Lorentz: $\vec{F} = q(\vec{E} + \vec{v}\land \vec{B})$
+			\item Force de rappel \'elastique
+			\item Tension fil
+			\item Frottements: absence de glissement, $\|\vec{R_T}\| < f_s \|\vec{R_N}\|$. Avec glissements $\|\vec{R_T}\| = f_d \|\vec{R_N}\|$
+			\item Th\`eor\`eme d'Archim\`ede: $\vec{\prod} = -m_{\text{fluides d\'eplac\'es}} \vec{g}$
+		\end{enumerate}
+\end{enumerate}
+
+\subsection{Approche \'energ\'etique du mouvement d'un point mat\'eriel $^{26}$}
+\begin{enumerate}
+	\item Puissance: $P(\vec{F}) = \vec{F}. \vec{v}$
+	\item Travail: $\delta W(\vec{F}) = P(\vec{F})dt = \vec{F}.d\vec{OM}$
+	\item Th\'eor\`eme de l'\'energie ci\'etique:
+		\begin{enumerate}
+			\item $\frac{dE_c}{dt} = \sum P(\vec{F_i})$
+			\item $dE_c = \sum \delta W(\vec{F_i})$
+			\item $\Delta E_c = \sum W(\vec{F_i})$
+		\end{enumerate}
+	\item
+		$E_p(z) = mgz + cte \quad$
+		$E_p = \frac{1}{2}k(l-l_0)^2 + cte \quad$
+		$E_p(r) = -\frac{K}{r} + cte$
+	\item Th\'eor\`eme de l'\'energie m\'ecanique:
+		\begin{enumerate}
+			\item $\frac{dE_m}{dt} = \sum P(\vec{F_i^{nc}})$
+			\item $dE_m = \sum \delta W(\vec{F_i^{nc}})$
+			\item $\Delta E_m = \sum W(\vec{F_i^{nc}})$
+		\end{enumerate}
+	\item $\delta W = -E_p$
+	\item $q_0$ position \'equilibre $\Leftrightarrow \frac{dE_p}{dq}(q_0) = 0$ (caract\'erisation \'energ\'etique) \\
+		$q_0$ est stable si $\frac{d^2E_p}{dq}(q_0) > 0$
+\end{enumerate}
+
+\subsection{Mouvement de particules charg\'ees dans des champs \'electrique et magn\'etique, uniformes et stationnaires $^{27}$}
+\begin{enumerate}
+	\item $\vec{F}_{elec} = q\vec{E}\quad \vec{F}_{magn} = q\vec{v} \land \vec{B}$
+	\item \begin{enumerate} \item Force \'electrique: $E_p(x) = -qEx + cte\quad E_p = qV$
+		\item $E = \frac{U}{d}$ \end{enumerate}
+	\item \begin{enumerate} \item \'Equations horaires pour une vitesse initiale perpendiculaire au champ
+		\item Une particule de chage $q$, masse $m$ suit une trajectoire circulaire uniforme \`a la vitesse $\omega_c = \frac{|qB|}{m}$
+		\end{enumerate}
+\end{enumerate}
+\newpage
+
+\section{R\'eacions}
+\subsection{R\'eactions acido-basiques $^{28}$}
+\begin{enumerate}
+	\item Acide: esp\`ece capable de lib\'erer au moins un proton H$^+$
+	\item L'eau est un ampholyte, tout acide ou base est susceptible de r\'eagir avec elle
+	\item \begin{enumerate} \item $K_e(T) = [H_3O^+].[HO^-] \quad K_e(T = 298K) = 1,0\times10^ {-14}\quad pK_e = -\log(K_e)$
+		\item $pH = -\log[H_3O^+]$
+		\item Constante acidit\'e est la constante associ\'ee \`a l'\'equilibre:\\ $ AH + H_2O \rightarrow A^- + H_3O^+$
+		\end{enumerate}
+	\item Relation d'Henderson: $pH = pKA + \log(\frac{[A^-]}{[AH]})$
+\end{enumerate}
+
+\newpage
 
 \end{document}
